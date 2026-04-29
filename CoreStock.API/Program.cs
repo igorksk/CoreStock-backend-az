@@ -27,7 +27,8 @@ builder.Services.AddScoped<ISalesOrderService, SalesOrderService>();
 builder.Services.AddScoped<IReportService, ReportService>();
 
 // CORS – origins from config or env (ALLOWED_ORIGINS), fallback to Vite dev
-var allowedOrigins = (builder.Configuration["ALLOWED_ORIGINS"] ?? "http://localhost:5173,http://localhost:3000")
+var allowedOrigins = (builder.Configuration["ALLOWED_ORIGINS"] ?? "http://localhost:5173,http://localhost:3000," +
+    "https://ambitious-rock-026bf530f.7.azurestaticapps.net")
     .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 builder.Services.AddCors(options =>
     options.AddPolicy("DevCors", policy =>
