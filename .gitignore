@@ -1,0 +1,56 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build artifacts
+bin/
+obj/
+Debug/
+Release/
+
+## Rider
+.idea/
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+logs/
+
+## EF / SQLite (not used, but safe to ignore)
+*.db
+*.db-shm
+*.db-wal
+
+## Test results & coverage
+TestResults/
+coverage/
+*.coverage
+*.coverage.*
+*.trx
+coverage-final.json
+
+## Publish output
+publish/
+
+## dotCover / NCrunch
+*.dotCover
+*.ncrunch*
+
+## User secrets
+**/secrets.json
+appsettings.*.Local.json
+
+## IDE
+.vscode/
+
+## Misc
+*.vsix
+*.tgz
+*.zip
+*.7z
